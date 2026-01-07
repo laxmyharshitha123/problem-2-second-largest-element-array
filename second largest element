@@ -1,0 +1,29 @@
+## finding the second largest element
+solution : public class SecondLargest {
+             public static void main(String[] args) {
+                int arr[] = {1,2,4,7,7,5};
+                 int n = arr.length;
+                      if(n>2) {
+                           System.out.println("second largest element does not exist");
+                              return :
+                        }
+                         int largest = arr[0];
+                         for(int i = 1;i<n;i++) {
+                          if(arr[i] > largest) {
+                            largest = arr[i];
+                            ]
+                         }
+                     int SecondLargest = Integer.MIN_VALUE;
+                        for(inti=0;i<n;i++) {
+                           if(arr[i] > secondlargest && arr[i]!=largest) {
+                              secondlargest = arr[i];
+                         }
+                           if(secondlargest == Integer.MIN_VALUE) {
+                               System.out.println("secondlargest element does not exist");
+                              } else{
+                                System.out.println("second largest element is : " +secondlargest);
+                              }
+                         }
+              ]
+*time complexity is o(2n) but the constants are ignored so thts why o(n)
+*space complexity is 0(1)
